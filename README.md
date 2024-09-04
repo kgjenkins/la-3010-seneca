@@ -281,7 +281,7 @@ This will let you preview what the contour lines will look like.  If we want to 
   * Check the box to "Produce 3D vector" (if you don't see it, expand the Advanced Parameters section)
 * Keep the other options and click "Run"
 
-To export the 3D contours to DXF, right-click the layer > Export > Save features as ... AutoCAD DXF or else export your whole project to DXF.
+To export the 3D contours to DXF, right-click the layer > Export > Save features as ... AutoCAD DXF or else export your whole project to DXF.  Be sure to set an appropriate CRS as described in the "Exporting data layers to a DXF file" section above.
 
 For a smaller file size, you could first run the "Clip raster by extent" tool to create a temporary layer that covers a smaller area, then run the contour tool on that.
 
@@ -292,7 +292,7 @@ To generate contours that cover more than one elevation raster tile, you could f
 
 Historical maps can be great sources of information that pre-dates the computer era.  However, most scanned maps images found online are just images, with no information about the coordiates that the map covers.  To view these maps in QGIS with other layers, we will need to do a process called "georeferencing".
 
-There are 2 maps in the "historical-maps" folder that we can try to georeference.
+There are 2 maps in the "historical-maps" folder that we can try to georeference.  The "Georeferencer" tool can be found in the "Layer" menu.  (In older versions of QGIS, it was in the "Raster" menu, but now it can also be used to georeference vector datasets such as DXF files, so it was moved to the Layer menu.)
 
 We'll work through the process together in the workshop, but for future reference, here are a couple of good video demos:
 
@@ -301,6 +301,19 @@ Georeferencing a map in QGIS:
 
 Digitizing points, lines, and polygons from a georeferenced map:
 <https://youtu.be/m12ZXpGBoDc?t=786>
+
+
+# Hydrography data
+
+In the United States, the USGS National Hydrography Dataset is a good source for hydrography data (rivers, lakes, etc).  Data for central New York (specifically the 04140201 watershed) has been downloaded as a geopackage that contains several layers.
+
+* From the `hydrography` folder, drag the "NHD_H_04140201_HU8_GPKG.gpkg" file onto QGIS.
+* A dialog window will ask which layers you would like to add.  Select these three:
+    * NHDFlowline (rivers/stream centerlines)
+    * NHDArea (these are major streams that are wide enough to be represented as polygons)
+    * NHDWaterbody (lake/pond polygons)
+
+You may want to set all three layers to the same shade of blue.
 
 
 ## Citing your Data Sources
@@ -313,6 +326,7 @@ The data for this workshop was derived from the following sources:
 * NLCD landcover: <https://www.mrlc.gov/data/nlcd-2021-land-cover-conus>
 * Map of Seneca County / PJ Browne (1858?): <https://www.loc.gov/item/2013593272/>
 * Map of Ho-De-No-Sau-Nee-Ga ... in 1720: from the similar filename in Box (source?), but with added JPEG compression
+* Hydrography: <https://www.usgs.gov/national-hydrography/access-national-hydrography-products>
 
 If you are using a basemap, you'll want to provide attribution to the basemap provider.  For some of the basemaps, the layer properties may have these details and possibly a link to the terms of use.  For example:
 
