@@ -9,6 +9,26 @@ Or set up a Zoom appointment at <https://guides.library.cornell.edu/gis/help>
 All the data and documentation for this workshop can be downloaded from: \
 <https://github.com/kgjenkins/la-3010-seneca/archive/main.zip>
 
+### Table of contents:
+- [QGIS workshop for LA 3010 (Hopewell), focusing on Seneca County, NY](#qgis-workshop-for-la-3010-hopewell-focusing-on-seneca-county-ny)
+- [Table of contents:](#table-of-contents)
+- [Some GIS terminology and concepts](#some-gis-terminology-and-concepts)
+- [Civil Boundaries](#civil-boundaries)
+- [Save your project!](#save-your-project)
+- [Streets](#streets)
+- [Basemaps via QuickMapServices](#basemaps-via-quickmapservices)
+- [Exporting your map to an image file](#exporting-your-map-to-an-image-file)
+- [Exporting your map to a PDF file](#exporting-your-map-to-a-pdf-file)
+- [Exporting data layers to a DXF file (for CAD software)](#exporting-data-layers-to-a-dxf-file-for-cad-software)
+- [Landcover raster data](#landcover-raster-data)
+- [Elevation raster data](#elevation-raster-data)
+- [Value Tool plugin](#value-tool-plugin)
+- [Elevation hillshade](#elevation-hillshade)
+- [Generating contour lines](#generating-contour-lines)
+- [Georeferencing a scanned map](#georeferencing-a-scanned-map)
+- [Hydrography data](#hydrography-data)
+- [Citing your Data Sources](#citing-your-data-sources)
+
 
 ## Some GIS terminology and concepts
 
@@ -303,7 +323,7 @@ Digitizing points, lines, and polygons from a georeferenced map:
 <https://youtu.be/m12ZXpGBoDc?t=786>
 
 
-# Hydrography data
+## Hydrography data
 
 In the United States, the USGS National Hydrography Dataset is a good source for hydrography data (rivers, lakes, etc).  Data for central New York (specifically the 04140201 watershed) has been downloaded as a geopackage that contains several layers.
 
