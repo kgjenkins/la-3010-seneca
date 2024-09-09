@@ -10,8 +10,6 @@ All the data and documentation for this workshop can be downloaded from: \
 <https://github.com/kgjenkins/la-3010-seneca/archive/main.zip>
 
 ### Table of contents:
-- [QGIS workshop for LA 3010 (Hopewell), focusing on Seneca County, NY](#qgis-workshop-for-la-3010-hopewell-focusing-on-seneca-county-ny)
-- [Table of contents:](#table-of-contents)
 - [Some GIS terminology and concepts](#some-gis-terminology-and-concepts)
 - [Civil Boundaries](#civil-boundaries)
 - [Save your project!](#save-your-project)
