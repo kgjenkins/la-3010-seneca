@@ -120,7 +120,7 @@ OpenStreetMap.org is a great source of streets data, and is widely considered to
 * Look in the "streets" folder, and drag the "nys-streets-seneca-neighbors.gpkg" file onto QGIS
 * If it ends up underneath the boundaries layer, drag the boundaries lower in the list of layers
 
-Explore the data a bit (identify tool, attribute table), and notice the contents of the "SHIED" column -- click the header twice to reverse sort by this column.  It has values like C, CT, S, SH, U, etc.  The definitions of these values can be found on page 9 of the **data dictionary** (metadata) file for the NYS statewide streets dataset at <https://gis.ny.gov/system/files/documents/2023/07/streets_data_dictionary.pdf>
+Explore the data a bit (identify tool, attribute table), and notice the contents of the "SHIELD" column -- click the header twice to reverse sort by this column.  It has values like C, CT, S, SH, U, etc.  The definitions of these values can be found on page 9 of the **data dictionary** (metadata) file for the NYS statewide streets dataset at <https://gis.ny.gov/system/files/documents/2023/07/streets_data_dictionary.pdf>
 
 * At the top of the layer styling panel, change "Single symbol" to "Categorized"
 * Set Value = "SHIELD", then click the "Classify" button towards the bottom of the panel
